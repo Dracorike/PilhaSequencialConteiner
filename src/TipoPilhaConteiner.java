@@ -30,9 +30,6 @@ public class TipoPilhaConteiner {
         if(!isFull()){
             conteiners[top] = conteiner;
             top++;
-            System.out.println("Inserido!");
-        }else{
-            System.out.println("A pilha está cheia!");
         }
     }
 
@@ -67,7 +64,7 @@ public class TipoPilhaConteiner {
 
     public void ocupacaoDeConteiners(){
         System.out.println("Topo -> " + top);
-        for(int i = 0; i < conteiners.length; i++){
+        for(int i = 0; i < top; i++){
             if(conteiners[i] == null){
                 System.out.println("Null");
                 continue;
